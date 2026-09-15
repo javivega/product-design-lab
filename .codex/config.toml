@@ -1,0 +1,8 @@
+# Project MCP servers for OpenAI Codex (CLI / IDE).
+# Requires this directory to be trusted. Same remotes as .cursor/mcp.json.
+
+[mcp_servers.notion]
+url = "https://mcp.notion.com/mcp"
+
+[mcp_servers.atlassian]
+url = "https://mcp.atlassian.com/v2/mcp"

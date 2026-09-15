@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+:root {
+  --primitive-primary: #0166ff;
+  --background-default: #f6f8fc;
+  --background-subtle: #ffffff;
+  --background-muted: #edf1f7;
+  --foreground-default: #152033;
+  --foreground-muted: #5b6677;
+  --action-primary: var(--primitive-primary);
+  --action-primary-hover: #0057dd;
+  --action-secondary: #e7eef9;
+  --action-destructive: #c73737;
+  --border-default: #d5ddea;
+  --border-strong: #9eabbc;
+  --border-focus: var(--primitive-primary);
+  --status-info: #2563eb;
+  --status-success: #15803d;
+  --status-warning: #b45309;
+  --status-error: #c73737;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; min-width: 320px; color: var(--foreground-default); background: var(--background-default); font-family: Inter, ui-sans-serif, system-ui, sans-serif; }
+button, input, select { font: inherit; }
+button:focus-visible, input:focus-visible, select:focus-visible { outline: 3px solid var(--border-focus); outline-offset: 2px; }

@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+:root {
+  --primitive-primary: #ff4e00;
+  --primitive-primary-hover: #e04500;
+  --background-default: #f7f4f0;
+  --background-subtle: #fffdf9;
+  --background-muted: #efe8df;
+  --background-inverse: #1c1917;
+  --foreground-default: #1c1917;
+  --foreground-muted: #5c534a;
+  --foreground-inverse: #fffdf9;
+  --action-primary: var(--primitive-primary);
+  --action-primary-hover: var(--primitive-primary-hover);
+  --action-secondary: #efe8df;
+  --action-destructive: #b42318;
+  --border-default: #e0d6cb;
+  --border-strong: #b7a99a;
+  --border-focus: var(--primitive-primary);
+  --status-info: #3d5a80;
+  --status-success: #2f6f4e;
+  --status-warning: #b45309;
+  --status-error: #b42318;
+  --status-pending: #b45309;
+  --status-incomplete: #7a5c3e;
+}
+
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  min-width: 320px;
+  color: var(--foreground-default);
+  background: var(--background-default);
+  font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+}
+button, input, textarea, select { font: inherit; }
+button:focus-visible, input:focus-visible, textarea:focus-visible {
+  outline: 3px solid var(--border-focus);
+  outline-offset: 2px;
+}

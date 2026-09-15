@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "notion": {
+      "url": "https://mcp.notion.com/mcp"
+    },
+    "atlassian": {
+      "url": "https://mcp.atlassian.com/v2/mcp"
+    }
+  }
+}
