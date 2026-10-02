@@ -2,6 +2,8 @@
 name: user-flows
 description: >-
   Write user flows for chosen design directions through screens and states — steps, decisions, system responses, and exceptions at behaviour altitude. Use when ux-designer Phase 6 runs.
+metadata:
+  internal: true
 ---
 
 ## Input

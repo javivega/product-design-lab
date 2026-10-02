@@ -1,6 +1,8 @@
 ---
 name: unmess
 description: Turn messy project inputs (notes, emails, RFPs, transcripts, Confluence/Notion links) into a skim-ready project context document. Prefer MCP fetch for Confluence and Notion URLs. Use when the user invokes unmess or needs to understand a project fast without inventing research or personas.
+metadata:
+  internal: true
 ---
 
 Read and follow `skills/unmess/SKILL.md` completely. Do not improvise a parallel method.

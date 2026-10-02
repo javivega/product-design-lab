@@ -2,6 +2,8 @@
 name: mom-test
 description: >-
   Turn Assumptions, Unknowns, and Conflicts into Mom Test–safe questions a product designer can use — plus a clear Open questions list. Ask live questions via Native Q&A (host-qa.md).
+metadata:
+  internal: true
 ---
 
 ## Input

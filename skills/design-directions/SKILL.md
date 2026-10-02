@@ -2,6 +2,8 @@
 name: design-directions
 description: >-
   Formalise substantially different design directions for a JTBD from a collaborative thinking session — clear approaches with reasoning and trade-offs, in workshop-ready prose, not UI specs. Use when ideator Phase 3 (Develop directions) runs.
+metadata:
+  internal: true
 ---
 
 ## Input

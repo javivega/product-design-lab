@@ -2,6 +2,8 @@
 name: synthetic-user-profiles
 description: >-
   Build simulation-ready synthetic user profiles as role-assignment prompts for product evaluation. Ground identity and frustrations in the brief, mark invented details, confirm unclear or synthetic choices with the designer via Native Q&A, and require hesitation/friction logging instead of “helpful” gap-filling.
+metadata:
+  internal: true
 ---
 
 ## Input

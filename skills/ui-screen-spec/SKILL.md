@@ -2,6 +2,8 @@
 name: ui-screen-spec
 description: >-
   Write a complete UI specification for one UX inventory screen — hierarchy, layout structure, components, states, actions, feedback, responsive and accessibility. Use when ui-designer Phase 4 designs screens.
+metadata:
+  internal: true
 ---
 
 ## Input

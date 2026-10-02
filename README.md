@@ -4,6 +4,50 @@ Multi-agent product design pipeline: from RFP/docs to a **product experience** p
 
 This repo is packaged for **Cursor, Claude Code, ChatGPT Work / Codex, and Antigravity** with one canonical layout. Host-only files exist only where those apps cannot share a format.
 
+## Install brief-analyst and problem-framer
+
+Two skills.sh commands. Run one and the installer asks where it should go. Add `-g` for every project, and `-a` for one agent (`claude-code`, `cursor`, `codex`, …). You can combine them.
+
+```bash
+npx skills add javivega/product-design-lab -s brief-analyst
+npx skills add javivega/product-design-lab -s problem-framer
+```
+
+```bash
+npx skills add javivega/product-design-lab -s brief-analyst -g
+npx skills add javivega/product-design-lab -s brief-analyst -a claude-code
+npx skills add javivega/product-design-lab -s problem-framer -g -a claude-code
+```
+
+Same install from a link:
+
+- [brief-analyst](https://github.com/javivega/product-design-lab/tree/main/.agents/skills/brief-analyst)
+- [problem-framer](https://github.com/javivega/product-design-lab/tree/main/.agents/skills/problem-framer)
+
+## Install one method on its own
+
+Each command installs that method only, not the agent. The installer asks where it should go. Add `-g` and `-a` the same way as above.
+
+```bash
+npx skills add javivega/product-design-lab -s assumption-mapping
+npx skills add javivega/product-design-lab -s mom-test
+npx skills add javivega/product-design-lab -s synthetic-user-profiles
+npx skills add javivega/product-design-lab -s problem-exploration
+npx skills add javivega/product-design-lab -s problem-framing
+npx skills add javivega/product-design-lab -s opportunity-mapping
+```
+
+Same install from a link:
+
+- [assumption-mapping](https://github.com/javivega/product-design-lab/tree/main/.agents/skills/assumption-mapping)
+- [mom-test](https://github.com/javivega/product-design-lab/tree/main/.agents/skills/mom-test)
+- [synthetic-user-profiles](https://github.com/javivega/product-design-lab/tree/main/.agents/skills/synthetic-user-profiles)
+- [problem-exploration](https://github.com/javivega/product-design-lab/tree/main/.agents/skills/problem-exploration)
+- [problem-framing](https://github.com/javivega/product-design-lab/tree/main/.agents/skills/problem-framing)
+- [opportunity-mapping](https://github.com/javivega/product-design-lab/tree/main/.agents/skills/opportunity-mapping)
+
+`node scripts/bundle-discovery-skills.mjs` rebuilds the agent folders and these method folders from `agents/` and `skills/`. A public install of the GitHub repo is what lists them on [skills.sh](https://skills.sh/javivega/product-design-lab).
+
 ## Pipeline
 
 See **[WORKFLOW.md](./WORKFLOW.md)** for the full map, handoffs, and how to invoke each stage.

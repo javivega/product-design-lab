@@ -2,6 +2,8 @@
 name: design-system
 description: >-
   Establish a token-driven design system — brand → primitives → semantic tokens → scales → components → patterns — for UI Designer Phase 2. Use when defining or refining theme tokens without hardcoding colours into screens.
+metadata:
+  internal: true
 ---
 
 ## Input

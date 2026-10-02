@@ -1,6 +1,8 @@
 ---
 name: workflow
 description: Orchestrate the full product-design lab pipeline from unstructured docs to a runnable prototype (Brief Analyst through Prototyper) in one shared run folder. Use when the user wants /workflow, the full pipeline, or to resume a run.
+metadata:
+  internal: true
 ---
 
 Read and follow `agents/workflow/AGENT.md` completely. Do not improvise a parallel method.

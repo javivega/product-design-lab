@@ -1,6 +1,8 @@
 ---
 name: ux-designer
 description: Turn chosen design directions into experience architecture — areas, screens, states, flows, and critical scenarios — without visual UI. Use when the user invokes ux-designer.
+metadata:
+  internal: true
 ---
 
 Read and follow `agents/ux-designer/AGENT.md` completely. Do not improvise a parallel method.

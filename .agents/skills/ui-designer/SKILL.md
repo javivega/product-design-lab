@@ -1,6 +1,8 @@
 ---
 name: ui-designer
 description: Turn UX architecture into a token-driven design system and complete screen UI specs. Use when the user invokes ui-designer.
+metadata:
+  internal: true
 ---
 
 Read and follow `agents/ui-designer/AGENT.md` completely. Do not improvise a parallel method.

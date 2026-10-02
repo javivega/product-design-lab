@@ -1,6 +1,8 @@
 ---
 name: prototyper
 description: Turn approved UX/UI specs into a runnable, scenario-based product-experience prototype. Use when the user invokes prototyper.
+metadata:
+  internal: true
 ---
 
 Read and follow `agents/prototyper/AGENT.md` completely. Do not improvise a parallel method.

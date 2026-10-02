@@ -2,6 +2,8 @@
 name: information-architecture
 description: >-
   Define experience structure and solution-area concepts for chosen design directions — conceptual places and relationships, not a 1:1 screen list or wireframes. Use when ux-designer Phases 3–4 run.
+metadata:
+  internal: true
 ---
 
 ## Input

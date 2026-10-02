@@ -2,6 +2,8 @@
 name: unmess
 description: >-
   Turn messy project inputs (notes, emails, RFPs, transcripts, scraps, Confluence/Notion links) into a clear, skim-ready project context document. Prefer MCP fetch for Confluence and Notion URLs. Use when someone needs to understand a project fast without inventing research or personas.
+metadata:
+  internal: true
 ---
 
 ## Input

@@ -2,6 +2,8 @@
 name: prototype-scaffold
 description: >-
   Scaffold a Vite + React + TypeScript + Tailwind prototype app with semantic CSS token hooks, shadcn-style ui kit, and folders for screens, scenarios, state, and mocks. Use when prototyper Phase 4 runs.
+metadata:
+  internal: true
 ---
 
 ## Input

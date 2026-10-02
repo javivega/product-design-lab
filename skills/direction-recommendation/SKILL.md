@@ -2,6 +2,8 @@
 name: direction-recommendation
 description: >-
   Qualitatively evaluate design directions for a JTBD and recommend 1–2 worth taking into experience design, written as clear prose with what to learn next. Use when ideator Phases 4–5 (Evaluate + Recommend) run.
+metadata:
+  internal: true
 ---
 
 ## Input
