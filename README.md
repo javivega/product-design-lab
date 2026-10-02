@@ -19,10 +19,10 @@ npx skills add javivega/product-design-lab -s brief-analyst -a claude-code
 npx skills add javivega/product-design-lab -s problem-framer -g -a claude-code
 ```
 
-Same install from a link:
+Direct download:
 
-- [brief-analyst](https://github.com/javivega/product-design-lab/tree/main/.agents/skills/brief-analyst)
-- [problem-framer](https://github.com/javivega/product-design-lab/tree/main/.agents/skills/problem-framer)
+- [brief-analyst.zip](https://github.com/javivega/product-design-lab/releases/download/v0.1.0/brief-analyst.zip)
+- [problem-framer.zip](https://github.com/javivega/product-design-lab/releases/download/v0.1.0/problem-framer.zip)
 
 ## Install one method on its own
 
@@ -37,14 +37,14 @@ npx skills add javivega/product-design-lab -s problem-framing
 npx skills add javivega/product-design-lab -s opportunity-mapping
 ```
 
-Same install from a link:
+Direct download:
 
-- [assumption-mapping](https://github.com/javivega/product-design-lab/tree/main/.agents/skills/assumption-mapping)
-- [mom-test](https://github.com/javivega/product-design-lab/tree/main/.agents/skills/mom-test)
-- [synthetic-user-profiles](https://github.com/javivega/product-design-lab/tree/main/.agents/skills/synthetic-user-profiles)
-- [problem-exploration](https://github.com/javivega/product-design-lab/tree/main/.agents/skills/problem-exploration)
-- [problem-framing](https://github.com/javivega/product-design-lab/tree/main/.agents/skills/problem-framing)
-- [opportunity-mapping](https://github.com/javivega/product-design-lab/tree/main/.agents/skills/opportunity-mapping)
+- [assumption-mapping.zip](https://github.com/javivega/product-design-lab/releases/download/v0.1.0/assumption-mapping.zip)
+- [mom-test.zip](https://github.com/javivega/product-design-lab/releases/download/v0.1.0/mom-test.zip)
+- [synthetic-user-profiles.zip](https://github.com/javivega/product-design-lab/releases/download/v0.1.0/synthetic-user-profiles.zip)
+- [problem-exploration.zip](https://github.com/javivega/product-design-lab/releases/download/v0.1.0/problem-exploration.zip)
+- [problem-framing.zip](https://github.com/javivega/product-design-lab/releases/download/v0.1.0/problem-framing.zip)
+- [opportunity-mapping.zip](https://github.com/javivega/product-design-lab/releases/download/v0.1.0/opportunity-mapping.zip)
 
 `node scripts/bundle-discovery-skills.mjs` rebuilds the agent folders and these method folders from `agents/` and `skills/`. A public install of the GitHub repo is what lists them on [skills.sh](https://skills.sh/javivega/product-design-lab).
 
