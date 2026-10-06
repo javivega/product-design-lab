@@ -72,11 +72,18 @@ function assertPortable(label, text) {
   }
 }
 
+function yamlPlain(value) {
+  if (/[:#\n]|^\s|\s$|"/.test(value)) {
+    return `"${value.replaceAll('\\', '\\\\').replaceAll('"', '\\"')}"`;
+  }
+  return value;
+}
+
 function skillMarkdown({ name, description, internal }) {
   const metadata = internal ? 'metadata:\n  internal: true\n' : '';
   return `---
 name: ${name}
-description: ${description}
+description: ${yamlPlain(description)}
 ${metadata}---
 
 Read and follow \`references/method.md\` completely. Do not improvise a parallel method.

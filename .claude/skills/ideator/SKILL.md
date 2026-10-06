@@ -1,6 +1,6 @@
 ---
 name: ideator
-description: Collaborative design-thinking partner: challenge, reframe, and explore opportunities with the designer, then formalise design directions. Use when the user invokes ideator.
+description: "Collaborative design-thinking partner: challenge, reframe, and explore opportunities with the designer, then formalise design directions. Use when the user invokes ideator."
 metadata:
   internal: true
 ---
