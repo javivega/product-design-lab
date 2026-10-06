@@ -24,6 +24,24 @@ Direct download:
 - [brief-analyst.zip](https://github.com/javivega/product-design-lab/releases/download/v0.1.0/brief-analyst.zip)
 - [problem-framer.zip](https://github.com/javivega/product-design-lab/releases/download/v0.1.0/problem-framer.zip)
 
+## Install ideator
+
+One skills.sh command. The direction methods ship inside this skill. The installer asks where it should go. Add `-g` for every project, and `-a` for one agent. You can combine them.
+
+```bash
+npx skills add javivega/product-design-lab -s ideator
+```
+
+```bash
+npx skills add javivega/product-design-lab -s ideator -g
+npx skills add javivega/product-design-lab -s ideator -a claude-code
+npx skills add javivega/product-design-lab -s ideator -g -a claude-code
+```
+
+Direct download:
+
+- [ideator.zip](https://github.com/javivega/product-design-lab/releases/download/v0.2.0/ideator.zip)
+
 ## Install one method on its own
 
 Each command installs that method only, not the agent. The installer asks where it should go. Add `-g` and `-a` the same way as above.
@@ -35,6 +53,8 @@ npx skills add javivega/product-design-lab -s synthetic-user-profiles
 npx skills add javivega/product-design-lab -s problem-exploration
 npx skills add javivega/product-design-lab -s problem-framing
 npx skills add javivega/product-design-lab -s opportunity-mapping
+npx skills add javivega/product-design-lab -s design-directions
+npx skills add javivega/product-design-lab -s direction-recommendation
 ```
 
 Direct download:
@@ -45,6 +65,8 @@ Direct download:
 - [problem-exploration.zip](https://github.com/javivega/product-design-lab/releases/download/v0.1.0/problem-exploration.zip)
 - [problem-framing.zip](https://github.com/javivega/product-design-lab/releases/download/v0.1.0/problem-framing.zip)
 - [opportunity-mapping.zip](https://github.com/javivega/product-design-lab/releases/download/v0.1.0/opportunity-mapping.zip)
+- [design-directions.zip](https://github.com/javivega/product-design-lab/releases/download/v0.2.0/design-directions.zip)
+- [direction-recommendation.zip](https://github.com/javivega/product-design-lab/releases/download/v0.2.0/direction-recommendation.zip)
 
 `node scripts/bundle-discovery-skills.mjs` rebuilds the agent folders and these method folders from `agents/` and `skills/`. A public install of the GitHub repo is what lists them on [skills.sh](https://skills.sh/javivega/product-design-lab).
 

@@ -1,6 +1,5 @@
 /**
- * Build installable brief-analyst and problem-framer skill folders
- * from the canonical method in agents/ and skills/.
+ * Build installable skill folders from the canonical method in agents/ and skills/.
  *
  * Edit those sources, then run: node scripts/bundle-discovery-skills.mjs
  *
@@ -8,7 +7,7 @@
  * Claude Code copies (metadata.internal): .claude/skills/<name>/
  * Release zips: dist/<name>.zip
  *
- * Also publishes each discovery method as its own skill (same two locations).
+ * Also publishes each bundled method as its own skill (same two locations).
  */
 import { execFileSync } from 'node:child_process';
 import {
@@ -37,6 +36,13 @@ const bundles = [
       'Turn needs and JTBDs into bounded design problems, opportunities, and questions that must be answered before exploring solutions. Use when the user invokes problem-framer.',
     methods: ['problem-exploration', 'problem-framing', 'opportunity-mapping'],
   },
+  {
+    name: 'ideator',
+    description:
+      'Collaborative design-thinking partner: challenge, reframe, and explore opportunities with the designer, then formalise design directions. Use when the user invokes ideator.',
+    methods: ['design-directions', 'direction-recommendation'],
+    extras: ['output-template.md'],
+  },
 ];
 
 const methodSkills = [
@@ -51,6 +57,7 @@ const publicNames = new Set([
 function rewritePaths(text) {
   return text
     .replace(/skills\/([a-z0-9-]+)\/SKILL\.md/g, '$1.md')
+    .replace(/agents\/[a-z0-9-]+\/output-template\.md/g, 'output-template.md')
     .replaceAll('../../agents/_shared/host-qa.md', 'host-qa.md')
     .replaceAll('../../agents/_shared/run-workspace.md', 'run-workspace.md')
     .replaceAll('../_shared/host-qa.md', 'host-qa.md')
@@ -103,6 +110,14 @@ function writeBundle(bundle, destDir, internal) {
     ).replace(/\nmetadata:\n  internal: true\n/, '\n');
     assertPortable(`${bundle.name} ${methodName}`, text);
     writeFileSync(join(references, `${methodName}.md`), text);
+  }
+
+  for (const extra of bundle.extras ?? []) {
+    const text = rewritePaths(
+      readFileSync(join(root, 'agents', bundle.name, extra), 'utf8'),
+    );
+    assertPortable(`${bundle.name} ${extra}`, text);
+    writeFileSync(join(references, extra), text);
   }
 
   writeFileSync(
@@ -205,5 +220,7 @@ for (const name of [...bundles.map((bundle) => bundle.name), ...methodSkills]) {
   );
 }
 
-console.log('Bundled brief-analyst, problem-framer, and their method skills.');
+console.log(
+  `Bundled ${bundles.map((bundle) => bundle.name).join(', ')}, and their method skills.`,
+);
 console.log(`Zips: ${[...bundles.map((bundle) => bundle.name), ...methodSkills].map((name) => `dist/${name}.zip`).join(', ')}`);
